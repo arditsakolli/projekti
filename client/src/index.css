@@ -1,0 +1,115 @@
+.main {
+  padding-top: 80px; /* Adjust the value to match the height of your navigation bar */
+}
+.paragraph-roboto {
+  font-style: oblique;
+  font-family: fantasy;
+}
+.position-r{
+  position: relative;
+}
+.position-a{
+  position: absolute;
+  left: 150px;
+  right: 150px;
+  top: 100px;
+  bottom: 100px;
+  gap: 10px;
+}
+.text-v{
+  color: white;
+
+}
+.d-flex{
+  display: flex;
+}
+
+.containerr {
+  background-color: rgba(0, 0, 0, 0.7); /* Background color with transparency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Dark shadow effect */
+  border-radius: 10px; /* Rounded corners for the container */
+  padding: 20px; /* Adjust padding as needed */
+  color: white; /* Text color */
+
+}
+
+@media (max-width:500px) {
+  .position-r{
+    position: none;
+  }
+  .position-a{
+
+    left: 0px;
+    right: 0px;
+    display: block;
+  }
+  .containerr {
+    background-color: rgba(0, 0, 0, 0.7); /* Background color with transparency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Dark shadow effect */
+    border-radius: 10px; /* Rounded corners for the container */
+    padding: 20px; /* Adjust padding as needed */
+    color: white; /* Text color */
+    display: block;
+  }
+}
+
+
+/* dashboard */
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  width: calc(33.33% - 20px); /* Përcaktoni gjerësinë e secilit produkt */
+  margin: 10px; /* Përcaktoni distancën midis produkteve */
+}
+.borderB{
+  border-bottom: 1px solid rgb(8, 169, 0);
+}
+.borderr{
+  border: solid rgb(0, 146, 12) 1px;
+}
+
+/* Media query për pajisjet me gjerësi maksimale 768px */
+@media only screen and (max-width: 768px) {
+  .product-item {
+      width: calc(50% - 20px); /* Përcaktoni gjerësinë e secilit produkt për pajisjet më të vogla */
+  }
+}
+
+/* Media query për pajisjet me gjerësi maksimale 576px */
+@media only screen and (max-width: 576px) {
+  .product-item {
+      width: calc(100% - 20px); /* Përcaktoni gjerësinë e secilit produkt për pajisjet më të vogla */
+  }
+}
+
+/* drop down menu */
+.dropdown-select {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.dropdown-select:hover {
+  background-color: #e9e9e9;
+}
+
+.dropdown-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.dropdown-option {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  background-color: #f2f2f2;
+}

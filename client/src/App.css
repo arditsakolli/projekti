@@ -1,0 +1,284 @@
+body {
+  /* background-image: url('https://images.pexels.com/photos/2609106/pexels-photo-2609106.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; */
+  background-color: #f0f2f5;
+}
+.transparent{
+  background-color: transparent;
+  background-color: rgba(93, 93, 93, 0.7); /* Black with 50% opacity */
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  box-shadow: 0 0 10px rgba(178, 178, 178, 0.2);
+  color: rgb(255, 255, 255);
+}
+
+.navbarr {
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+   width: 100%;
+}
+video{
+  width: 80%;  
+}
+.foto{
+  margin-left: 40px;
+  width: 70px;
+}
+
+.navbar-leftt {
+  float: left;
+  padding: 10px;
+  font-family: "Brush Script MT", cursive;
+
+}
+
+.navbar-rightt {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+.logoo {
+  height: 50px; /* Adjust the height as needed */
+}
+.coolorr{
+  color: green;
+
+  margin: 20px;
+  cursor: pointer;
+}
+
+.nav-linkk {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 20px;
+  transition: background-color 0.3s;
+}
+
+.nav-linkk:hover {
+  background-color: rgb(0, 125, 8);
+}
+
+.iconn {
+  display: none;
+}
+
+.borderBootom{
+  border-bottom: 2px rgb(19, 167, 0) solid;
+}
+
+@media screen and (max-width: 600px) {
+  .navbarr {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+     width: 100%;
+  }
+  .navbar-rightt {
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+    flex-direction: column;
+    padding-top: 60px;
+  }
+  .navbar-rightt.activee {
+    display: flex;
+  }
+}
+
+
+/* //Footer */
+
+/* body{
+  background: #fcfcfc;
+  font-family: sans-serif;
+} */
+footer{
+  
+  background: #111;
+  height: auto;
+  width: 100vw;
+
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 5px;
+
+  border-radius: 50%;
+
+}
+.socials a i{
+  font-size: 1.1rem;
+  width: 20px;
+
+
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px;
+padding-bottom: 40px;
+  text-align: center;
+}
+.footer-bottom p{
+float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom p a{
+color:#44bae8;
+font-size: 16px;
+text-decoration: none;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+.footer-menu{
+float: right;
+
+}
+.footer-menu ul{
+display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+color: #cfd2d6;
+text-decoration: none;
+}
+.footer-menu ul li a:hover{
+color: #27bcda;
+}
+.color{
+  color: white;
+}
+.color:hover{
+   color:#44bae8;
+}
+
+@media (max-width:500px) {
+.footer-menu ul{
+display: flex;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+}
+
+
+/* file input  */
+.file-input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.input-file {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-input-label {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #068100e2;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Hover effect for label */
+.file-input-label:hover {
+  background-color: #008f18;
+}
+
+.widthh{
+  width: 50px;
+}
+
+.font{
+  color: #000;
+}
+.oblique{
+  font-style: oblique;
+}
+.bold{
+  font-size: 20px;
+  font-weight: bold;
+}
+.bg{
+  background-color: #f0f2f5;
+}
+
+.marginl{
+margin-left: 3px;
+}
+.fullscreen{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
